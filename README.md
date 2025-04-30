@@ -1,6 +1,6 @@
 # Galeria de Arte
 
-Uma galeria digital responsiva desenvolvida com React, proporcionando uma experiência interativa para explorar obras de arte. ([GitHub - RS-Hiago/Art_museum: Art é um projeto digital que visa proporcionar uma experiência enriquecedora na exploração de diversas formas de arte. Desenvolvida com foco em expandir para uma aplicação React no futuro, a galeria oferece recursos para explorar exposições, artistas e obras de arte.
+Uma galeria digital responsiva desenvolvida com React, proporcionando uma experiência interativa para explorar obras de arte. Um projeto digital que visa proporcionar uma experiência na exploração de diversas formas de arte. Desenvolvida com foco em expandir para uma aplicação React no futuro, a galeria oferece recursos para explorar exposições, artistas e obras de arte.
 
 ## 📌 Descrição
 
