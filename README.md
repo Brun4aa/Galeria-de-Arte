@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+Galeria de Arte
+Uma galeria digital responsiva desenvolvida com React, proporcionando uma experiência interativa para explorar obras de arte.​
+GitHub
++1
+miguelbritobarbosa.com.br
++1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📌 Descrição
+Este projeto foi criado para estudo e prática com o framework React, visando a construção de uma galeria de arte digital. A aplicação é totalmente responsiva, adaptando-se a dispositivos móveis e desktops.​
 
-## Available Scripts
+🚀 Tecnologias Utilizadas
+React
 
-In the project directory, you can run:
+HTML5
 
-### `npm start`
+CSS3
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+JavaScript​
+acervogaleria.com.br
++2
+miguelbritobarbosa.com.br
++2
+GitHub Wiki Search Engine Enablement
++2
+UFPA
++2
+acervogaleria.com.br
++2
+acervogaleria.com.br
++2
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🎯 Funcionalidades
+Exibição de obras de arte com título, imagem e descrição.
 
-### `npm test`
+Interface responsiva para visualização em diferentes dispositivos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Navegação intuitiva entre as obras.​
 
-### `npm run build`
+🔧 Como Rodar o Projeto
+Clone o repositório:​
+GitHub
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copiar
+Editar
+git clone https://github.com/Brun4aa/Galeria-de-Arte.git
+Instale as dependências:​
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copiar
+Editar
+cd Galeria-de-Arte
+npm install
+Inicie o servidor de desenvolvimento:​
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copiar
+Editar
+npm start
+A aplicação estará disponível em http://localhost:3000.​
 
-### `npm run eject`
+📦 Scripts Disponíveis
+npm start: Inicia o aplicativo em modo de desenvolvimento.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm test: Executa os testes em modo interativo.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm run build: Cria uma versão otimizada para produção da aplicação.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm run eject: Ejeta a configuração do Create React App para personalizações avançadas.​
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🤝 Contribuições
+Contribuições são bem-vindas! Para contribuir:​
+GitHub
 
-## Learn More
+Faça um fork do repositório.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Crie uma branch para sua feature (git checkout -b feature/nova-feature).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Faça commit das suas alterações (git commit -am 'Adiciona nova feature').
 
-### Code Splitting
+Envie para a branch (git push origin feature/nova-feature).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Abra um Pull Request.​
+GitHub Wiki Search Engine Enablement
++4
+GitHub
++4
+Viva o Linux
++4
