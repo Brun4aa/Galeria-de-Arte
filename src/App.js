@@ -1,12 +1,26 @@
 import React from "react";
-import { Button, Row, Container, Col, Form, Navbar, Table, Image } from "react-bootstrap";
+import {
+  Button,
+  Row,
+  Container,
+  Col,
+  Form,
+  Navbar,
+  Table,
+  Image,
+} from "react-bootstrap";
 
 function App() {
   const [tasks, setTasks] = React.useState([]);
   const [newTask, setNewTask] = React.useState("");
   const [newImage, setNewImage] = React.useState("");
+  const [newAuthor, setNewAuthor] = React.useState("");
+  const [newDate, setNewDate] = React.useState("");
+
   const [updateTask, setUpdateTask] = React.useState("");
   const [updateImage, setUpdateImage] = React.useState("");
+  const [updateAuthor, setUpdateAuthor] = React.useState("");
+  const [updateDate, setUpdateDate] = React.useState("");
 
   React.useEffect(() => {
     const readTasks = () => {
@@ -18,12 +32,19 @@ function App() {
   }, []);
 
   const onCreate = () => {
-    const newEntry = { name: newTask, image: newImage };
+    const newEntry = {
+      name: newTask,
+      image: newImage,
+      author: newAuthor,
+      date: newDate,
+    };
     const updatedTasks = [...tasks, newEntry];
     localStorage.setItem("tasks", JSON.stringify(updatedTasks));
     setTasks(updatedTasks);
     setNewTask("");
     setNewImage("");
+    setNewAuthor("");
+    setNewDate("");
   };
 
   const onDelete = (task) => {
@@ -37,10 +58,14 @@ function App() {
     const updatedTasks = [...tasks];
     if (updateTask) updatedTasks[index].name = updateTask;
     if (updateImage) updatedTasks[index].image = updateImage;
+    if (updateAuthor) updatedTasks[index].author = updateAuthor;
+    if (updateDate) updatedTasks[index].date = updateDate;
     localStorage.setItem("tasks", JSON.stringify(updatedTasks));
     setTasks(updatedTasks);
     setUpdateTask("");
     setUpdateImage("");
+    setUpdateAuthor("");
+    setUpdateDate("");
   };
 
   return (
@@ -70,6 +95,22 @@ function App() {
                   onChange={(e) => setNewImage(e.target.value)}
                   placeholder="URL da imagem da obra"
                 />
+                <Form.Control
+                  className="mt-2"
+                  autoComplete="off"
+                  type="text"
+                  value={newAuthor}
+                  onChange={(e) => setNewAuthor(e.target.value)}
+                  placeholder="Nome do Autor"
+                />
+                <Form.Control
+                  className="mt-2"
+                  autoComplete="off"
+                  type="text"
+                  value={newDate}
+                  onChange={(e) => setNewDate(e.target.value)}
+                  placeholder="Data da Obra"
+                />
               </Form.Group>
               <Button variant="primary" onClick={onCreate}>
                 Adicionar Obra
@@ -85,6 +126,8 @@ function App() {
                 <tr>
                   <th>Imagem</th>
                   <th>Nome da Obra</th>
+                  <th>Autor</th>
+                  <th>Data</th>
                   <th>Excluir</th>
                   <th>Atualizar</th>
                 </tr>
@@ -98,11 +141,17 @@ function App() {
                           src={task.image}
                           alt="obra"
                           rounded
-                          style={{ width: "100px", height: "100px", objectFit: "cover" }}
+                          style={{
+                            width: "100px",
+                            height: "100px",
+                            objectFit: "cover",
+                          }}
                         />
                       )}
                     </td>
                     <td>{task.name}</td>
+                    <td>{task.author}</td>
+                    <td>{task.date}</td>
                     <td>
                       <Button variant="danger" onClick={() => onDelete(task)}>
                         Excluir
@@ -120,6 +169,18 @@ function App() {
                         className="mb-2"
                         onChange={(e) => setUpdateImage(e.target.value)}
                         placeholder="Nova URL da imagem"
+                      />
+                      <Form.Control
+                        type="text"
+                        className="mb-2"
+                        onChange={(e) => setUpdateAuthor(e.target.value)}
+                        placeholder="Novo autor"
+                      />
+                      <Form.Control
+                        type="text"
+                        className="mb-2"
+                        onChange={(e) => setUpdateDate(e.target.value)}
+                        placeholder="Nova data"
                       />
                       <Button
                         className="text-white"
