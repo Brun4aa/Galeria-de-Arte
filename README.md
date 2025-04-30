@@ -9,10 +9,9 @@ Este projeto foi criado para estudo e prática com o framework React, visando a 
 ## 🚀 Tecnologias Utilizadas
 
 - React
-- HTML5
-- CSS3
-- JavaScript 
-
+- HTML
+- CSS
+  
 ## 🎯 Funcionalidades
 
 - Exibição de obras de arte com título, imagem e descrição.
