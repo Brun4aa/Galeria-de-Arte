@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+  background-color: #f9f4ef;
+  font-family: 'Playfair Display', serif;
+  color: #3e3e3e;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #40342a;
+  margin-bottom: 1.5rem;
+}
+
+.navbar {
+  background-color: #f7efe5 !important;
+  border-bottom: 1px solid #e3d3be;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6e4d2f !important;
+  font-family: 'Playfair Display', serif;
+}
+
+.table {
+  background-color: #fffdf8;
+  border: 1px solid #e8dccb;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+input[type="text"] {
+  border-radius: 10px !important;
+  border: 1px solid #d2b48c !important;
+  padding: 0.6rem !important;
+  background-color: #fffefb;
+  font-family: 'Playfair Display', serif;
+  width: 100%;
+}
+
+input::placeholder {
+  font-style: italic;
+  color: #a0978b;
+}
+
+.btn-primary {
+  background-color: #d2b48c;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #c3a77a;
+}
+
+.btn-warning {
+  background-color: #f0c987;
+  border: none;
+  color: #5a4424;
+}
+
+.btn-warning:hover {
+  background-color: #e4b966;
+}
+
+.btn-danger {
+  background-color: #c97c63;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #b76850;
+}
+
+
+.gallery-image {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  h2 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
